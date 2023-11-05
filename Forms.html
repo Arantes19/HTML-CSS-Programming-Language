@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Test_10.html</title>
+	</head>
+	<body>
+			<form action="Dados_Formulário.PHP">
+				<label for="first_name"> First Name:</label>
+				<input type="text" id="first_name" name="first_name"
+				placeholder="Joana">
+				<!--Com o for & id, ao clicar em "First Name" o cursor vai parar no input -->
+
+				<br><br>
+
+				<label for="last_name"> Last Name:</label>
+				<input type="text" id="last_name" name="last_name"
+				placeholder="Costa">
+				<!--Placeholder atribui um exemplo aos inputs-->
+
+				<br><br>
+
+				<label for="title"> Title:</label>
+
+				<label for="Mr.">Mr.</label>
+				<input type="radio" value="Mr." id="Mr." name="title">
+				<label for="Mrs.">Mrs.</label>
+				<input type="radio" value="Mrs." id="Mrs."name="title">
+				<label for="Miss">Miss</label>
+				<input type="radio" value="Miss." id="Miss"name="title">
+				<!--Ao adicionar o atributo "name" é possivel dar reset ao botão após colocar  -->
+				<br><br>
+
+				<label for="payment"> Payment:</label>
+				<select id="payment">
+					<option value="visa">Visa</option>
+					<option value="mastercard">Mastercard</option>
+					<option value="giftcard">Giftcard</option>
+					<option value="paypal">Paypal</option>
+				</select>
+				<!--o Select, permite ao utilizador selecionar de uma forma alternativa o que pretende-->
+				<br><br>
+
+				<label for="email"> Email:</label>
+				<input type="email" id="email" name="email" placeholder="exemple@gmail.com">
+				<br><br>
+
+				<label for="birthday"> Birthday:</label>
+				<input type="date" id="birthday" name="birthday" min="1970-01-01" max="2021-12-31">
+				<!--É possivel adicionar um valor minimo ou máximo. neste caso eu limitei no ano 1970-->
+				<br><br>
+
+				<label for="quatity"> Quatity:</label>
+				<input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+				<!--A quantidade está limitada entre 0 e 99 e com 1 por defeito -->
+				<br><br>
+
+				<label for="phone"> Phone:</label>
+				<input type="tel" id="phone" name="phone">
+				<br><br>
+
+				<label for="password"> Password:</label>
+				<input type="password" id="password" name="password" maxlength="12">
+				max 12 characters
+				<br><br>
+
+				<label for="rate"> Rate us:</label>
+				1<input type="range" step="25" value="50">100
+				<!--Aqui colocamos o limite min atrás do input e o max á frente do input
+					Step: Indica a quantidade que irá avançar -->
+				<br><br>
+
+				<label for="subscribe"> Subscribe:</label>
+				<input type="checkbox" id="subscribe" name="subscribe">
+				<br><br>
+
+				<label for="upload"> Upload a file:</label>
+				<input type="file" id="upload" name="upload" accept=".txt">
+				<!--O acceept serve para limitar/expecificar que tipo de ficheiro quer receber (txt/pdf/excel etc etc) -->
+
+				<br><br>
+
+				<input type="reset" name="reset_button">
+
+				<br><br>
+
+				<input type="submit">
+			</form>
+	</body>
+
+</html>
